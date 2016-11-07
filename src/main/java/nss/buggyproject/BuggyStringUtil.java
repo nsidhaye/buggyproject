@@ -58,7 +58,7 @@ public class BuggyStringUtil {
 	 public static boolean isEmpty(final CharSequence cs) {
 		 //Introduce defect
 //		         return cs == null || cs.length() == 0;
-		 return cs == null && cs.length() == 0;
+		 return cs == null || cs.length() == 0;
 		     }
 	
 	 
