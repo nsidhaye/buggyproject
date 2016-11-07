@@ -65,5 +65,10 @@ public class TestDummy {
 		// remainder of test
 		System.out.println("Executed...");
 	}
+	
+	@Test
+	void testCheck() {
+		System.out.println("testCheck...");
+	}
 
 }
