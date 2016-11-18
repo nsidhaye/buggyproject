@@ -50,3 +50,4 @@ src/main/java/.settings/org.sonarlint.eclipse.core.prefs
 *.class
 *.lst
 *.properties
+.target
