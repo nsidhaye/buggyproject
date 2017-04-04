@@ -6,7 +6,7 @@ package nss.buggyproject;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
-
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.logging.Logger;
 
 import org.junit.jupiter.api.Disabled;
@@ -74,5 +74,10 @@ public class TestDummy {
 		BuggyStringUtil bg = new BuggyStringUtil();
 		assertEquals("teststring", bg.trim(" teststring"));
 	}
-
+	
+	@Test
+	void testEmptyString() {
+		BuggyStringUtil bg = new BuggyStringUtil();
+		assertTrue( bg.isEmpty(""), () -> "The string is not null or blank");
+	}
 }
