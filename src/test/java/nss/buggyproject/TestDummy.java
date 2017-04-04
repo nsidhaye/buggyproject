@@ -67,6 +67,9 @@ public class TestDummy {
 	}
 	
 	@Test
+	/**
+	 * Adding unimporant change
+	 */
 	void testCheck() {
 		BuggyStringUtil bg = new BuggyStringUtil();
 		assertEquals("teststring", bg.trim(" teststring"));
